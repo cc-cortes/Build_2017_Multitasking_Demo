@@ -1,0 +1,36 @@
+﻿<Page
+    x:Class="Build2017_Multitasking.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Build2017_Multitasking"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" ></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <ScrollViewer Grid.Row="0">
+            <Image Source="ms-appx:///Assets/smk_mock.png" />
+        </ScrollViewer>
+
+
+        <CommandBar Grid.Row="1" Grid.ColumnSpan="2" x:Name="ButtonBar" >
+            <AppBarButton Name="ConnectButton" Visibility="Visible"  Label="Device Search" Icon="Find" Click="RegisterTasksButton_Click"></AppBarButton>
+            <AppBarButton Name="DisconnectButton" Visibility="Collapsed" Label="Stop Search" Icon="View"  Click="UnregisterTasksButton_Click"></AppBarButton>
+            <AppBarButton Name="PlayButton" Visibility="Visible"  Label="Play" Icon="Play" Click="PlayAudio_Click"></AppBarButton>
+            <AppBarButton Name="StopButton" Visibility="Collapsed"  Label="Pause" Icon="Pause" Click="StopAudio_Click"></AppBarButton>
+            <AppBarButton Name="CompileButton" Visibility="Visible"  Label="Compile" Icon="Save" Click="StartExtendedExecutionButton_Click"></AppBarButton>
+            <AppBarButton Name="StopCompileButton" Visibility="Collapsed"  Label="Stop" Icon="Cancel" Click="EndExtendedExecutionButton_Click"></AppBarButton>
+        </CommandBar>
+
+    </Grid>
+</Page>
