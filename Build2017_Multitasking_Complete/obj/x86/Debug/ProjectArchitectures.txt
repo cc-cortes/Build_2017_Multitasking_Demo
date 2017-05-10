@@ -1,2 +1,0 @@
-C:\Users\chcortes\Source\Repos\ADEX\Build2017_Multitasking\Build2017_Multitasking_Complete\Build2017_Multitasking.csproj;x86
-C:\Users\chcortes\Source\Repos\ADEX\Build2017_Multitasking\Tasks\Tasks.csproj;x86
